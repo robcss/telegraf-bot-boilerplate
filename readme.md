@@ -10,6 +10,10 @@ A simple [Node.js](https://nodejs.org/en/) boilerplate for developing Telegram b
 
 
 ## Installation
+### Prerequisites
+
+ - [Node.js](https://nodejs.org/en/download/) installed
+
 ### Get the repository
 By cloning it:
  ```
@@ -97,12 +101,15 @@ PORT will be set automatically by Heroku.
 NODE_ENV will be set to "production" by Heroku.
 
 ### Login to Heroku via CLI
+Cd to your repository and login
 ```
 $ heroku login
 ```
-
+### Add Heroku remote to your local repository
+```
+$ heroku git:remote -a your-app-name123
+```
 ### Deploy with Git
-Cd to your repository and push your latest commit
 ```
 $ git add .
 $ git commit -m "first deploy"
